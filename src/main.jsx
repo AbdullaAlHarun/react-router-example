@@ -12,6 +12,7 @@ import Contact from './componants/Contact/Contact';
 import Users from './componants/Users/Users.jsx';
 import Posts from './componants/Posts/Posts.jsx';
 import PostDetails from './componants/PostDetails/PostDetails.jsx';
+import ErrorPage from './componants/ErrorPage/ErrorPage.jsx';
 
 
 
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/about',
